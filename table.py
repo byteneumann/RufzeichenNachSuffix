@@ -6,15 +6,15 @@ if len(sys.argv) > 1:
     whitelist = sys.argv[1]
 
 with open('callsigns.txt', 'r') as file:
-    callsigns = file.readlines()
+    callsigns = [line.rstrip('\n') for line in file.readlines()]
 
 # parse callsigns into prefix, number and suffix
 tokens = []
 for callsign in callsigns:
-    match = re.match('([A-Z]{2,2})([0-9])([A-Z]{1,7})', callsign)
+    match = re.fullmatch('([A-Z]{2,2})([0-9])([A-Z]{1,7})', callsign)
     if not match:
         continue
-    if not re.match(whitelist, callsign):
+    if not re.fullmatch(whitelist, callsign):
         continue
     tokens.append(match.groups())
 
