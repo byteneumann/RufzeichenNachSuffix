@@ -28,11 +28,17 @@ Die Tabellen lassen sich auch leicht in z.B. Excel importieren und bequemer anze
 ## Ergebnisse
 
 Es liegt das [Verzeichnis mit Stand vom 1. Juni 2024](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) zu Grunde.
-Die Filterung nach Rufzeichenklassen basiert auf dem [Rufzeichenplan](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AmtsblattverfuegungenAFu/Rufzeichenplan_06-24_Auszug_aus_Vfg_61_2024.pdf?__blob=publicationFile&v=6), der seit 24. Juni 2024 gilt.
+Die Filterung nach Rufzeichenklassen basiert auf dem [Rufzeichenplan](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AmtsblattverfuegungenAFu/Rufzeichenplan_06-24_Auszug_aus_Vfg_61_2024.pdf), der seit 24. Juni 2024 gilt.
 Die Ergebnisse für personengebundene Rufzeichen sind hier zu sehen:
 * [Klasse A](https://gist.github.com/byteneumann/4097795728b19b13be2b4df8ae5355e4)
 * [Klasse E](https://gist.github.com/byteneumann/59321bddf85b3edab364c07f8ef9af10)
 * ~~Klasse N~~ folgt, sobald das Verzeichnis aktualisiert wurde.
+
+### Lizenz
+
+Das [Verzeichnis der zugeteilten deutschen Amateurfunkrufzeichen und ihrer Inhaber (Rufzeichenliste)](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) und [Ruf­zei­chen­plan für den Ama­teur­funk­dienst in Deutsch­land gül­tig ab 24.6.2024](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AmtsblattverfuegungenAFu/Rufzeichenplan_06-24_Auszug_aus_Vfg_61_2024.pdf) unterliegen der [Datenlizenz Deutschland – Namensnennung – Version 2.0](www.govdata.de/dl-de/by-2-0).
+
+Bei den verlinkten Ergebnissen handelt es sich um eine neue Gestaltung eines Auszugs der Originaldaten.
 
 ## Ausführung
 
