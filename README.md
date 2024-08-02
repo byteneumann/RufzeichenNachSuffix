@@ -27,12 +27,12 @@ Die Tabellen lassen sich auch leicht in z.B. Excel importieren und bequemer anze
 
 ## Ergebnisse
 
-Es liegt das [Verzeichnis mit Stand vom 1. Juni 2024](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) zu Grunde.
+Es liegt das [Verzeichnis mit Stand vom 26. Juli 2024](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) zu Grunde.
 Die Filterung nach Rufzeichenklassen basiert auf dem [Rufzeichenplan](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/AmtsblattverfuegungenAFu/Rufzeichenplan_06-24_Auszug_aus_Vfg_61_2024.pdf), der seit 24. Juni 2024 gilt.
 Die Ergebnisse für personengebundene Rufzeichen sind hier zu sehen:
 * [Klasse A](https://gist.github.com/byteneumann/4097795728b19b13be2b4df8ae5355e4)
 * [Klasse E](https://gist.github.com/byteneumann/59321bddf85b3edab364c07f8ef9af10)
-* ~~Klasse N~~ folgt, sobald das Verzeichnis aktualisiert wurde.
+* [Klasse N](https://gist.github.com/byteneumann/51b7cba710359111c5473d493242e9a6)
 
 ### Lizenz
 
@@ -42,10 +42,14 @@ Bei den verlinkten Ergebnissen handelt es sich um eine neue Gestaltung eines Aus
 
 ## Ausführung
 
-Der Code nutzt das ["Verzeichnis der zugeteilten deutschen Amateurfunkrufzeichen und ihrer Inhaber (Rufzeichenliste)"](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) im PDF-Format als Datenbasis. Für die weitere Verarbeitung wird zuerst der Text mit `pdftotext` extrahiert. Mit einem regulären Ausdruck werden die Rufzeichen gesucht und dann in einem Python-Skript nach Filterung anhand vom Rufzeichenplan zu mehreren Tabellen im Markdown-Format aufgearbeitet. Es muss lediglich
+Zur Ausführung werden `make`, `wget`, `pdftotext`, `grep` und Python 3 benötigt.
+
+Zur Erstellung der Tabellen muss lediglich
 ```
 make
 ```
-ausgeführt werden.
+im Quellverzeichnis ausgeführt werden.
 
-Zur Ausführung werden `make`, `wget`, `pdftotext`, `grep` und Python 3 benötigt.
+### Details
+
+Der Code nutzt das ["Verzeichnis der zugeteilten deutschen Amateurfunkrufzeichen und ihrer Inhaber (Rufzeichenliste)"](https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Rufzeichenliste/rufzeichenliste_afu.html) im PDF-Format als Datenbasis. Für die weitere Verarbeitung wird zuerst der Text mit `pdftotext` extrahiert. Mit einem regulären Ausdruck werden die Rufzeichen gesucht und dann in einem Python-Skript nach Filterung anhand vom Rufzeichenplan zu mehreren Tabellen im Markdown-Format aufgearbeitet.
